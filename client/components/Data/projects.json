@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "year": "2023",
+    "title": "Dating Website",
+    "imageSrc": "../public/Images 2/proimg/DatingWebsite.png",
+    "description": "This is a project made with Html, Css, and JavaScript.",
+    "liveLink": "https://sarthaksharma52.github.io/dating-app/",
+    "sourceCodeLink": "https://github.com/sarthaksharma52/dating-app",
+    "cardColor": "#318AFC",
+    "textColor": "white" 
+  },
+  {
+    "id": 2,
+    "year": "2024",
+    "title": "Blogging App",
+    "imageSrc": "../public/Images 2/proimg/BlogingApp.png",
+    "description": "This is a project made with Nodejs express ejs and mongodb.",
+    "liveLink": "/",
+    "sourceCodeLink": "https://github.com/sarthaksharma52/BlogingApp",
+    "cardColor": "#e2e3e3",
+    "textColor": "#2ba0ff" 
+  },
+  {
+    "id": 3,
+    "year": "2024",
+    "title": "NoteTaking App",
+    "imageSrc": "../public/Images 2/proimg/NoteTaking.png",
+    "description": "This is a project made with nodejs, express and ejs.",
+    "liveLink": "https://notetakingapp-6sjw.onrender.com",
+    "sourceCodeLink": "https://github.com/sarthaksharma52/NoteTakingAPP",
+    "cardColor": "#B2FFCB",
+    "textColor": "#000000" 
+  },
+  {
+    "id": 4,
+    "year": "2024",
+    "title": "Venture agency",
+    "imageSrc": "../public/Images 2/proimg/ventureAgency.png",
+    "description": "This is a project made with Html , Css, LocoMotivejs , GSAP and JavaScript.",
+    "liveLink": "https://sarthaksharma52.github.io/WeBUILT/",
+    "sourceCodeLink": "https://github.com/sarthaksharma52/WeBUILT",
+    "cardColor": "#FFFFFF",
+    "textColor": "#000000" 
+  },
+  {
+    "id": 5,
+    "year": "2024",
+    "title": "RealTime Tracke",
+    "imageSrc": "../public/Images 2/proimg/TrackingApp.png",
+    "description": "This is a project made with nodejs , WebSocket and EJS.",
+    "liveLink": "https://tracker-q69x.onrender.com",
+    "sourceCodeLink": "https://github.com/sarthaksharma52/Tracker",
+    "cardColor": "#42A5F5",
+    "textColor": "white" 
+  }
+]

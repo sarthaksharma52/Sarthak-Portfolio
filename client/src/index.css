@@ -1,0 +1,554 @@
+body {
+    background-color: #000;
+    background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 10vw;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+/* nav-bar sction */
+.nav_bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 12px; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    /* background: rgba(255, 255, 255, 0.8); Adjust the RGBA values to fit your design */
+    backdrop-filter: blur(6px); /* Adjust the blur intensity */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #454545;
+    
+}
+.nav_items1{
+    text-decoration: none;
+    color: white;
+}
+.nav_items{
+    text-decoration: none;
+    color: #454545;
+}
+.nav_items:active{
+    color: white;
+}
+.nav_items:hover{
+    color: white;
+}
+.nav_bar .nav_items{
+    margin: 25px;
+}
+
+.left{
+    font-size: 1.2rem;
+}
+
+.linkedin{
+    color: #06EF6F;
+}
+.linkedin:hover{
+    color: #06EF6F;
+    border-bottom:1px solid #06EF6F;
+}
+
+/* home page section */
+
+
+.home{
+    height: 100vh;
+}
+.hr{
+    margin-top: 11vh;
+    margin-left: 3vw;
+    margin-right: 2vw;
+}
+
+.text-gradient{
+    background: linear-gradient(to right, #666, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    
+}
+.text-gradient0{
+    color: #666;
+    font-weight: 70;
+    /* padding-left: 0.4rem; */ 
+}
+.Country{
+    padding-left: 0.4rem; 
+}
+
+.text-gradient1 {
+    background: linear-gradient(to right, #666, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5rem; 
+    font-weight: 700; 
+}
+.text-gradient2 {
+    background: linear-gradient(to right, white, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5rem; 
+    font-weight: 700; 
+}
+
+
+
+/* say hello */
+
+.sayHello{
+    height: 80vh;
+}
+
+.section1sayhello{
+    display: flex;
+    flex-direction: row;
+    margin: 2vw;
+}
+.hello{
+    color: #A8A8A8;
+}
+.hrsayhello{
+    width: 79vw;
+    margin: -5px;
+    margin-left: 5px;
+
+}
+
+.buttonsayhello button{
+    background-color: transparent;
+    border: 2px solid #A8A8A8;
+    color: #A8A8A8;
+    width: 20vw;
+    height: 7vh;
+}
+
+.sayhellobtn:hover{
+    background-color: white;
+    color: #000;
+}
+
+.buttonsayhello{
+    display: flex;
+    justify-content: center;
+    /* margin-top: 12vh; */
+    padding-bottom: -5vh;
+}
+
+.text-gradient-hello {
+    background: linear-gradient(to right, #666, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem; 
+    font-weight: bold; 
+}
+
+/* about section */
+
+.section1about{
+    display: flex;
+    flex-direction: row;
+    margin: 2vw;
+    display: block;
+}
+.about1{
+
+    color: #454545;
+}
+.hrabout{
+    /* width: 41vw; */
+    margin: -5px;
+    margin-left: 5px;
+    display: block;
+
+}
+.hrabout hr{
+    width: 48vw;
+    padding-top: -12vh;
+}
+
+.text-gradient-about {
+    background: linear-gradient(to right, #666, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem; 
+    font-weight: bold; 
+}
+
+
+/* footer section */
+
+.footer_main{
+    padding: 10vh;
+    height: 40vh;
+    background-color: #000;
+    /* position: fixed;
+    bottom: 0; */
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px;
+}
+
+.footer_items{
+    text-decoration: none;
+    margin: 25px;
+    color: #454545;
+}
+.footer_items1{
+    margin: 25px;
+    color: white;
+}
+.footer_items:hover{
+    color: white;
+}
+.footer_items_icon{
+    margin: 10px;
+}
+
+
+/* project */
+
+
+.text-gradient-aboutnew {
+    background: linear-gradient(to right, #666, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem; 
+    font-weight: 400; 
+}
+.aboutContent{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-left: 10vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact section */
+.contact{
+    height: 100vh;
+}
+
+
+
+
+/* about1 section */
+.about{
+    padding-top: 7vh;
+    height: 100vh;
+}
+.aboutHeading{
+    font-size: 7rem;
+}
+.aboutContent{
+    font-size: 4rem;
+}
+.aboutsection{
+    height: 90vh;
+}
+.section1about{
+    display: flex;
+    flex-direction: row;
+    margin: 2vw;
+    /* height: 80vh; */
+}
+.aboutHR{
+    color: #A8A8A8;
+    
+}
+.hrabout{
+    width: 79vw;
+    margin: -5px;
+    margin-left: 5px;
+
+}
+
+.container.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .item {
+    flex: 1 1 30%; /* Each item takes up 30% of the container width */
+    max-width: 30%;
+    box-sizing: border-box;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .img {
+    width: 100%;
+    height: auto;
+    max-width: 100px; /* Adjust based on your design */
+  }
+  
+  h3 {
+    margin-top: 0.5rem;
+  }
+  
+
+
+
+  /* project section */
+
+.project{
+    padding-top: 20vh;
+}
+.text-gradient-projectheading {
+    background: linear-gradient(to right, #666, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 6rem; 
+    font-weight: 400; 
+}
+.text-gradient-projectcontent {
+    background: linear-gradient(to right, #666, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem; 
+    font-weight: 400; 
+    margin-top: 15vh;
+    margin-left: 9vw;
+    padding-bottom: 16vh;
+}
+.projectrep{
+    /* height: 100vh; */
+}
+
+
+
+/* contact section */
+
+
+
+.contact1{
+    height: 85vh;
+}
+.sayHello9{
+    margin-top: 12vh;
+    font-weight: 700;
+}
+.text-gradient-contact {
+    background: linear-gradient(to right, #666, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 6rem; 
+    font-weight: 550; 
+}
+.text-gradient-contact-body-9 {
+    background: linear-gradient(to right, #666, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3.5rem; 
+    font-weight: 450; 
+    padding-top: 15vh;
+    padding-left: 12vw;
+    padding-right: 12vw;
+}
+
+
+
+/* skill section */
+
+/* .data1:hover{
+    data-aos="flip-left";
+} */
+
+
+/* Add this CSS to your stylesheet (e.g., styles.css) */
+
+.about-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    /* padding-bottom: 42vh; */
+    height: 100vh;
+    /* background-color: #111;  */
+    color: #fff; /* Adjust as needed */
+  }
+  
+  .text-gradient-about {
+    flex: 1;
+    font-size: 2.2em;
+    line-height: 1.5;
+    max-width: 50%; /* Adjust as needed */
+    margin-right: 20px; /* Adjust as needed */
+  }
+  
+  .about-image img {
+    max-width: 500px;
+    height: 40rem;
+    margin-bottom: 35vh;
+    border-radius: 10px; /* Adjust as needed */
+    /* padding-bottom: 15vh; */
+  }
+  
+  .hrskill{
+    width: 81vw;
+    margin: -5px;
+    margin-left: 5px;
+    display: block;
+
+}
+
+.buttoncontactme button{
+    background-color: transparent;
+    border: 2px solid #A8A8A8;
+    color: #A8A8A8;
+    width: 20vw;
+    height: 7vh;
+}
+
+.contactmebtn:hover{
+    background-color: white;
+    color: #000;
+}
+
+.buttoncontactme{
+    display: flex;
+    justify-content: center;
+    margin-top: 12vh;
+    padding-bottom: -5vh;
+}
+
+
+/* contact section */
+
+/* styles.css */
+
+.contact-box {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+    padding: 20px;
+    /* background-color: #111; */
+    color: #fff;
+  }
+  
+  .contact-box form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 49px;
+    max-width: 600px;
+  }
+  
+  .contact-box label {
+    margin: 10px 0 5px;
+  }
+  
+  .contact-box input,
+  .contact-box textarea {
+    
+    height: 10vh;
+    width: 51vw;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #1A1A1A;
+    opacity: 0.7;
+    border: 1px solid #333;
+    color: #fff;
+    /* border-radius: 5px; */
+  }
+  .contact-box textarea {
+    height: 16rem;
+  }
+  
+  .contact-box button {
+    padding: 10px 20px;
+    background: #fff;
+    border: none;
+    color: #111;
+    cursor: pointer;
+    height: 10vh;
+    font-size: 16px;
+    width: 51vw;
+    /* border-radius: 5px; */
+  }
+  
+  .contact-box button:hover {
+    background: #ddd;
+  }
+  
+
+
+
+  /* effect */
+
+  .section1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .location {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+  }
+  
+  .blink-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #0f0;
+    border-radius: 50%;
+    margin-left: 10px;
+    animation: blink 1s infinite;
+    transform: translateY(-6px);
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  .time {
+    margin-left: 10px;
+    font-size: 15px;
+  }
+  .temp {
+    margin-left: 10px;
+    font-size: 15px;
+  }
+  

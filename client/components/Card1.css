@@ -1,0 +1,47 @@
+.card {
+    width: 65%;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    margin: 20px;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .card-year {
+    font-size: 14px;
+  }
+  
+  .card-arrow {
+    font-size: 24px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-title {
+    font-size: 34px;
+    padding: 10px;
+  }
+  
+  .card-image-link {
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+  }
+  .card:hover .card-arrow {
+    transform: rotate(-45deg);
+  }
+  .card-link{
+    text-decoration: none;
+  }
