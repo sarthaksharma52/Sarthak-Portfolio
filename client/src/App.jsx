@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import ScrollToTop from '../components/ScrollToTop';
 import { Outlet } from 'react-router-dom';
 import Aos from 'aos';
-import "Aos/dist/aos.css"
+import "aos/dist/aos.css"
 
 
 const App = () => {
