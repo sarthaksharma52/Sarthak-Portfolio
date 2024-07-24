@@ -5,7 +5,13 @@ const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
-app.use(cors());
+app.use(cors(
+  {
+    origin: ["https://sarthak-portfolio.onrender.com/"],
+    methods:["POST"],
+    credentials: true
+  }
+));
 app.use(bodyParser.json());
 
 app.post('/api/contact', async (req, res) => {
