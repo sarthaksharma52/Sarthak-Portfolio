@@ -24,7 +24,7 @@ const ContactForm = () => {
     setError(null);
 
     try {
-      const response = await axios.post('https://sarthak-portfolio-ebon.vercel.app/api/contact', formData); // Update URL
+      const response = await axios.post('https://sarthak-portfolio-backend.vercel.app/api/contact', formData);
       if (response.status === 200) {
         alert('Message sent successfully!');
         setFormData({ name: '', email: '', message: '' });
