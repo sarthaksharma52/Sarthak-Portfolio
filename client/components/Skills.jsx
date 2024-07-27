@@ -18,7 +18,7 @@ const Skills = () => {
                   <div className={data.id}
                   data-aos="flip-left"
                   >
-                  <img className="img" src={`/assets/${data.imageSrc}`} alt=""/>
+                  <img className="img" src={data.imageSrc} alt={data.title} />
                   <h3>{data.title}</h3>
                   </div>
                 </div>
