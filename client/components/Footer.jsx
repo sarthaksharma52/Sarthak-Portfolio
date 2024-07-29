@@ -12,9 +12,9 @@ const Footer = () => {
         <div className="container footer">
           <div className="left footer_items1">Sarthak Sharma</div>
           <div className="mid">
-            <Link to="" className='footer_items'>projects</Link>
-            <Link to="" className='footer_items'>about</Link>
-            <Link to="" className='footer_items'>contact</Link>
+            <Link to="/Projects" className='footer_items'>projects</Link>
+            <Link to="/About" className='footer_items'>about</Link>
+            <Link to="/Contact" className='footer_items'>contact</Link>
             <a href={pdf}  className='footer_items'>resume</a>
           </div>
           <div className="right">
