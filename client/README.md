@@ -50,3 +50,11 @@ npm run dev
 Usage
 After starting the development server, you can view the website by navigating to http://localhost:3000 in your web browser.
 
+Contributing
+Contributions are welcome! If you have any suggestions or find any issues, please open an issue or submit a pull request.
+
+License
+This project is licensed under the MIT License.
+
+Contact
+Feel free to reach out to me via the contact form on the website or connect with me on LinkedIn.
