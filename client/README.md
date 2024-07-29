@@ -13,3 +13,40 @@ Contact
 Introduction
 Welcome to my portfolio website! Here you can find information about my projects, skills, and get in touch with me. This website serves as a professional online presence and a place to showcase my work.
 
+Features
+Responsive design
+Project showcase
+Skills display
+Contact form
+Integrated with LinkedIn
+Technologies Used
+Frontend: React, Vite
+Styling: CSS, Bootstrap
+Backend: Node.js, Express.js (for contact form)
+Email Service: Nodemailer
+Installation
+To run this project locally, follow these steps:
+
+Clone the repository:
+
+sh
+Copy code
+git clone https://github.com/yourusername/portfolio-website.git
+Navigate to the project directory:
+
+sh
+Copy code
+cd portfolio-website
+Install dependencies:
+
+sh
+Copy code
+npm install
+Start the development server:
+
+sh
+Copy code
+npm run dev
+Usage
+After starting the development server, you can view the website by navigating to http://localhost:3000 in your web browser.
+
