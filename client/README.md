@@ -1,8 +1,15 @@
-# React + Vite
+Portfolio Website
+This is my personal portfolio website built using React and Vite. The site showcases my projects, skills, and provides a way to contact me.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Table of Contents
+Introduction
+Features
+Technologies Used
+Installation
+Usage
+Contributing
+License
+Contact
+Introduction
+Welcome to my portfolio website! Here you can find information about my projects, skills, and get in touch with me. This website serves as a professional online presence and a place to showcase my work.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
