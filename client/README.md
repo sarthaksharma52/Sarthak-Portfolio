@@ -31,7 +31,7 @@ Clone the repository:
 
 sh
 Copy code
-git clone https://github.com/yourusername/portfolio-website.git
+git clone https://github.com/sarthaksharma52/Sarthsk-Portfolio.git
 Navigate to the project directory:
 
 sh
