@@ -1,16 +1,5 @@
 [
   {
-    "id": 1,
-    "year": "2023",
-    "title": "Dating Website",
-    "imageSrc": "images 2/proimg/DatingWebsite.png",
-    "description": "This is a project made with Html, Css, and JavaScript.",
-    "liveLink": "https://sarthaksharma52.github.io/dating-app/",
-    "sourceCodeLink": "https://github.com/sarthaksharma52/dating-app",
-    "cardColor": "#318AFC",
-    "textColor": "white" 
-  },
-  {
     "id": 2,
     "year": "2024",
     "title": "Blogging App",
@@ -52,6 +41,17 @@
     "liveLink": "https://tracker-q69x.onrender.com",
     "sourceCodeLink": "https://github.com/sarthaksharma52/Tracker",
     "cardColor": "#42A5F5",
+    "textColor": "white" 
+  },
+  {
+    "id": 1,
+    "year": "2023",
+    "title": "Dating Website",
+    "imageSrc": "images 2/proimg/DatingWebsite.png",
+    "description": "This is a project made with Html, Css, and JavaScript.",
+    "liveLink": "https://sarthaksharma52.github.io/dating-app/",
+    "sourceCodeLink": "https://github.com/sarthaksharma52/dating-app",
+    "cardColor": "#318AFC",
     "textColor": "white" 
   }
 ]
