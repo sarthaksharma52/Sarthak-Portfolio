@@ -5,7 +5,7 @@
     "title": "Blogging App",
     "imageSrc": "/images 2/proimg/BlogingApp.png",
     "description": "This is a project made with Nodejs express ejs and mongodb.",
-    "liveLink": "/",
+    "liveLink": "https://github.com/sarthaksharma52/BlogingApp",
     "sourceCodeLink": "https://github.com/sarthaksharma52/BlogingApp",
     "cardColor": "#e2e3e3",
     "textColor": "#2ba0ff" 
