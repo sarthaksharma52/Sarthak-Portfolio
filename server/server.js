@@ -7,7 +7,7 @@ require('dotenv').config();
 const app = express();
 app.use(cors(
   {
-    origin: ["https://sarthak-portfolio.onrender.com/"],
+    origin: [""],
     methods:["POST"],
     credentials: true
   }
