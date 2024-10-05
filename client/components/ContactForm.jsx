@@ -69,6 +69,7 @@ const ContactForm = () => {
           {loading ? 'Sending...' : 'Submit'}
         </button>
         {error && <p className="error">{error}</p>}
+        <p className='note'>Note:-It take some time</p>
       </form>
     </div>
   );

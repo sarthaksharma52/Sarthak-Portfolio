@@ -552,6 +552,10 @@ body {
 .contact {
     height: 100vh;
 }
+.note{
+    color: #454545;
+    margin-top: 12px;
+}
 
 /* about1 section */
 .about {
