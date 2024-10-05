@@ -15,7 +15,9 @@ const Sayhello = () => {
     </div>
 
     <div className="text-gradient-hello">
-    why don't you come say hi@sarthak.dec04@gmail.com
+    why don't you come say
+    
+   <div className="mail">hi@sarthak.dec04@gmail.com</div> 
     </div>
 
     <div className="buttoncontactme">

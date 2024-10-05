@@ -19,10 +19,14 @@ const AboutImgText = () => {
           </div>
         </div>
         <div className="about-box">
-          <div className="text-gradient-about">
+          <div className="text-gradient-about full-text">
             Based in India/UP, MERN stack developer experience of different
             variety of projects. A passionate developer and I love what I do, and
             I strongly believe in; "The less it is the cooler is your interface"
+          </div>
+          <div className="text-gradient-about mobile-text">
+            MERN stack developer experience of different variety of projects. 
+            "The less it is the cooler is your interface"
           </div>
           <div
             className="about-image"

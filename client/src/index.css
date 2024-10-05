@@ -6,213 +6,501 @@ body {
     font-family: 'Arial', sans-serif;
     color: #fff;
 }
-
 /* nav-bar sction */
-.nav_bar{
+.nav_bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* margin: 12px; */
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    /* background: rgba(255, 255, 255, 0.8); Adjust the RGBA values to fit your design */
     backdrop-filter: blur(6px); /* Adjust the blur intensity */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid #454545;
-    
+    padding: 10px 20px; /* Add some padding for better spacing */
 }
-.nav_items1{
+
+.nav_items1 {
     text-decoration: none;
     color: white;
 }
-.nav_items{
+
+.nav_items {
     text-decoration: none;
     color: #454545;
 }
-.nav_items:active{
+
+.nav_items:active {
     color: white;
 }
-.nav_items:hover{
+
+.nav_items:hover {
     color: white;
 }
-.nav_bar .nav_items{
+
+.nav_bar .nav_items {
     margin: 25px;
 }
 
-.left{
+.left {
     font-size: 1.2rem;
 }
 
-.linkedin{
+.linkedin {
     color: #06EF6F;
 }
-.linkedin:hover{
+
+.linkedin:hover {
     color: #06EF6F;
-    border-bottom:1px solid #06EF6F;
+    border-bottom: 1px solid #06EF6F;
 }
+
+/* Responsive Styles */
+/* Add styles for the hamburger menu */
+.hamburger {
+    display: none; /* Hidden by default on larger screens */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #454545; /* Change color as needed */
+    margin: 3px 0; /* Spacing between bars */
+    transition: all 0.3s ease; /* Smooth transition for the change */
+}
+
+/* Cross styles */
+.hamburger.active div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px); /* Rotate first bar */
+}
+
+.hamburger.active div:nth-child(2) {
+    opacity: 0; /* Hide the middle bar */
+}
+
+.hamburger.active div:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px); /* Rotate third bar */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav_bar {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .nav_items {
+        display: none; /* Hide nav items by default */
+    }
+
+    /* Show nav items when a class (e.g., 'active') is added */
+    .nav_bar.active .nav_items {
+        display: block; /* Show nav items when the menu is active */
+        margin: 10px 0; /* Adjust margin */
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger on smaller screens */
+    }
+    .nav_items{
+        color: white;
+    }
+}
+
+/* Larger screens */
+@media (min-width: 769px) {
+    .nav_bar {
+        flex-direction: row; /* Keep items in a row */
+    }
+
+    .nav_items {
+        display: inline-block; /* Show nav items inline */
+    }
+
+    .hamburger {
+        display: none; /* Hide hamburger on larger screens */
+    }
+    
+}
+
+
 
 /* home page section */
 
 
-.home{
+.home {
     height: 100vh;
 }
-.hr{
+
+.hr {
     margin-top: 11vh;
     margin-left: 3vw;
     margin-right: 2vw;
 }
 
-.text-gradient{
+/* Gradient text */
+.text-gradient {
     background: linear-gradient(to right, #666, #fff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 700;
-    
 }
-.text-gradient0{
+
+/* Non-gradient text */
+.text-gradient0 {
     color: #666;
     font-weight: 70;
-    /* padding-left: 0.4rem; */ 
 }
-.Country{
-    padding-left: 0.4rem; 
+
+/* Country text */
+.Country {
+    padding-left: 0.4rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .home {
+        height: 70vh;
+    }
+    .hr {
+        margin-top: 5vh; /* Reduce top margin on smaller screens */
+        margin-left: 2vw; /* Adjust left margin */
+        margin-right: 1vw; /* Adjust right margin */
+    }
+
+    .text-gradient {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .text-gradient0 {
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+        padding-left: 0.2rem; /* Adjust padding for smaller screens */
+    }
+
+    .Country {
+        padding-left: 0.2rem; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .home {
+        height: 75vh;
+    }
+    .hr {
+        margin-top: 3vh; /* Further reduce top margin on extra small screens */
+        margin-left: 1vw; /* Further adjust left margin */
+        margin-right: 1vw; /* Further adjust right margin */
+    }
+
+    .text-gradient {
+        font-size: 1.2rem; /* Further adjust font size for extra small screens */
+    }
+
+    .text-gradient0 {
+        font-size: 1rem; /* Further adjust font size for extra small screens */
+    }
+
+    .Country {
+        padding-left: 0.1rem; /* Further adjust padding for extra small screens */
+    }
 }
 
 .text-gradient1 {
     background: linear-gradient(to right, #666, #fff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 5rem; 
-    font-weight: 700; 
+    font-size: 10vw; /* Responsive font-size based on viewport width */
+    font-weight: 700;
 }
+
 .text-gradient2 {
     background: linear-gradient(to right, white, #fff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 5rem; 
-    font-weight: 700; 
+    font-size: 10vw; /* Responsive font-size based on viewport width */
+    font-weight: 700;
 }
+
+/* Media queries for different screen sizes */
+@media (min-width: 768px) {
+    .text-gradient1{
+        font-size: 4rem; /* Adjust font-size for tablets and medium screens */
+    }
+    .text-gradient2 {
+        font-size: 2.8rem; /* Adjust font-size for tablets and medium screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .text-gradient1{
+        font-size: 5rem; /* Adjust font-size for larger screens like desktops */
+    }
+    .text-gradient2 {
+        font-size: 3.1rem; /* Adjust font-size for tablets and medium screens */
+    }
+}
+@media (max-width: 480px) {
+    .text-gradient1{
+        font-size: 2.2rem; /* Adjust font-size for larger screens like desktops */
+    }
+    .text-gradient2 {
+        font-size: 1.9rem; /* Adjust font-size for tablets and medium screens */
+    }
+}
+
 
 
 
 /* say hello */
 
-.sayHello{
+.sayHello {
     height: 80vh;
 }
 
-.section1sayhello{
+.section1sayhello {
     display: flex;
     flex-direction: row;
     margin: 2vw;
 }
-.hello{
+
+.hello {
     color: #A8A8A8;
 }
-.hrsayhello{
+
+.hrsayhello {
     width: 79vw;
     margin: -5px;
     margin-left: 5px;
-
 }
 
-.buttonsayhello button{
+.buttonsayhello button {
     background-color: transparent;
     border: 2px solid #A8A8A8;
     color: #A8A8A8;
-    width: 20vw;
-    height: 7vh;
+    width: 20vw; /* Width for larger screens */
+    height: 7vh; /* Height for larger screens */
 }
 
-.sayhellobtn:hover{
+.sayhellobtn:hover {
     background-color: white;
     color: #000;
 }
 
-.buttonsayhello{
+.buttonsayhello {
     display: flex;
     justify-content: center;
-    /* margin-top: 12vh; */
-    padding-bottom: -5vh;
+    padding-bottom: -5vh; /* Consider changing to positive value */
 }
 
 .text-gradient-hello {
     background: linear-gradient(to right, #666, #fff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 4rem; 
-    font-weight: bold; 
+    font-size: 4rem; /* Font size for larger screens */
+    font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .sayHello {
+        height: 70vh; /* Adjust height for smaller screens */
+    }
+
+    .section1sayhello {
+        flex-direction: column; /* Stack items vertically */
+        margin: 4vw; /* Adjust margin for smaller screens */
+    }
+
+    .buttonsayhello button {
+        width: 50vw; /* Adjust button width for smaller screens */
+        height: 6vh; /* Adjust height for smaller screens */
+    }
+
+    .text-gradient-hello {
+        font-size: 2.5rem; /* Reduce font size for smaller screens */
+    }
+    .mail{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sayHello {
+        height: 45vh; /* Further adjust height for extra small screens */
+    }
+
+    .section1sayhello {
+        margin: 3vw; /* Further adjust margin for extra small screens */
+    }
+
+    .buttonsayhello button {
+        width: 80vw; /* Full width for extra small screens */
+        height: 5vh; /* Further adjust height for extra small screens */
+    }
+
+    .text-gradient-hello {
+        font-size: 1.7rem; /* Further reduce font size for extra small screens */
+    }
+    .mail{
+        font-size: 1.4rem;
+    }
 }
 
 /* about section */
 
-.section1about{
+.section1about {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* Use row layout for larger screens */
     margin: 2vw;
-    display: block;
 }
-.about1{
 
+.about1 {
     color: #454545;
 }
-.hrabout{
-    /* width: 41vw; */
+.full-text {
+    display: block; /* Show full text by default */
+}
+.mobile-text {
+    display: none; /* Hide mobile text by default */
+}
+
+.hrabout {
     margin: -5px;
     margin-left: 5px;
     display: block;
-
-}
-.hrabout hr{
-    width: 48vw;
-    padding-top: -12vh;
 }
 
+.hrabout hr {
+    width: 48vw; /* Adjust width for larger screens */
+    padding-top: -12vh; /* Consider adjusting this as it's negative */
+}
+
+/* Gradient Text */
 .text-gradient-about {
     background: linear-gradient(to right, #666, #fff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 2.5rem; 
+    font-size: 2.5rem; /* Font size for larger screens */
     font-weight: bold; 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .section1about {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        margin: 4vw; /* Adjust margin for smaller screens */
+    }
+    .full-text {
+        display: none; /* Hide full text on mobile */
+      }
+    
+      .mobile-text {
+        display: block; /* Show mobile text */
+      }
+
+    .hrabout hr {
+        width: 80vw; /* Adjust width for smaller screens */
+    }
+
+    .text-gradient-about {
+        font-size: 1.5rem; /* Reduce font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .section1about {
+        margin: 3vw; /* Further adjust margin for extra small screens */
+    }
+
+    .hrabout hr {
+        width: 90vw; /* Full width for extra small screens */
+    }
+
+    .text-gradient-about {
+        font-size: 1.5rem; /* Further reduce font size for extra small screens */
+    }
+    .full-text {
+        display: none; /* Hide full text on mobile */
+      }
+    
+      .mobile-text {
+        display: block; /* Show mobile text */
+      }
 }
 
 
 /* footer section */
 
-.footer_main{
+
+.footer_main {
     padding: 10vh;
-    height: 40vh;
+    height: 40vh; /* Height may need adjustment for smaller screens */
     background-color: #000;
-    /* position: fixed;
-    bottom: 0; */
 }
 
-.footer{
+.footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* Use row layout for larger screens */
     justify-content: space-between;
     align-items: center;
     margin: 12px;
 }
 
-.footer_items{
+/* Footer Item Styles */
+.footer_items {
     text-decoration: none;
     margin: 25px;
     color: #454545;
 }
-.footer_items1{
+
+.footer_items1 {
     margin: 25px;
     color: white;
 }
-.footer_items:hover{
+
+.footer_items:hover {
     color: white;
 }
-.footer_items_icon{
+
+.footer_items_icon {
     margin: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .footer_main {
+        height: auto; /* Allow the footer to expand with content */
+        padding: 5vh; /* Reduce padding for smaller screens */
+    }
+
+    .footer_items,
+    .footer_items1 {
+        margin: 10px; /* Reduce margin for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        margin: 5px; /* Further adjust margin for extra small screens */
+    }
+
+    .footer_items,
+    .footer_items1 {
+        margin: 5px; /* Further reduce margin for extra small screens */
+    }
+
+    .footer_main {
+        padding: 2vh; /* Further reduce padding for extra small screens */
+    }
 }
 
 
@@ -226,63 +514,77 @@ body {
     font-size: 4rem; 
     font-weight: 400; 
 }
-.aboutContent{
+
+/* Centering the content and adjusting for smaller screens */
+.aboutContent {
     display: flex;
     justify-content: center;
     text-align: left;
-    margin-left: 10vw;
+    margin-left: 10vw; /* Use vw for responsive margin */
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .text-gradient-aboutnew {
+        font-size: 1.5rem; /* Reduce font size for tablets */
+    }
 
+    .aboutContent {
+        margin-left: 5vw; /* Reduce left margin for smaller screens */
+    }
+}
 
+@media (max-width: 480px) {
+    .text-gradient-aboutnew {
+        font-size: 1.5rem; /* Further reduce font size for mobile */
+    }
 
-
-
-
-
-
-
-
+    .aboutContent {
+        margin-left: 2vw; /* Further reduce left margin for mobile */
+        flex-direction: column; /* Stack content vertically if needed */
+        align-items: center; /* Center align items for better appearance */
+    }
+}
 
 
 
 /* contact section */
-.contact{
+.contact {
     height: 100vh;
 }
 
-
-
-
 /* about1 section */
-.about{
+.about {
     padding-top: 7vh;
     height: 100vh;
 }
-.aboutHeading{
-    font-size: 7rem;
+
+.aboutHeading {
+    font-size: 7rem; /* Base font size */
 }
-.aboutContent{
-    font-size: 4rem;
+
+.aboutContent {
+    font-size: 3.5rem; /* Base font size */
 }
-.aboutsection{
+
+.aboutsection {
     height: 90vh;
 }
-.section1about{
+
+.section1about {
     display: flex;
     flex-direction: row;
     margin: 2vw;
-    /* height: 80vh; */
 }
-.aboutHR{
+
+.aboutHR {
     color: #A8A8A8;
-    
 }
-.hrabout{
+
+.hrabout {
     width: 79vw;
     margin: -5px;
     margin-left: 5px;
-
 }
 
 .container.skills {
@@ -290,16 +592,16 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     padding: 1rem;
-  }
-  
-  .items {
+}
+
+.items {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
-  }
-  
-  .item {
+}
+
+.item {
     flex: 1 1 30%; /* Each item takes up 30% of the container width */
     max-width: 30%;
     box-sizing: border-box;
@@ -308,60 +610,129 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-  }
-  
-  .img {
+}
+
+.img {
     width: 100%;
     height: auto;
     max-width: 100px; /* Adjust based on your design */
-  }
-  
-  h3 {
+}
+
+h3 {
     margin-top: 0.5rem;
-  }
-  
+}
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .aboutHeading {
+        font-size: 5rem; /* Reduce font size for tablets */
+    }
 
+    .aboutContent {
+        font-size: 1.5rem; /* Reduce font size for tablets */
+    }
+
+    .section1about {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+        margin: 1rem; /* Adjust margin for smaller screens */
+    }
+
+    .item {
+        flex: 1 1 45%; /* Adjust item width for better fit */
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutHeading {
+        font-size: 3.5rem; /* Further reduce font size for mobile */
+    }
+
+    .aboutContent {
+        font-size: 2rem; /* Further reduce font size for mobile */
+    }
+
+    .section1about {
+        margin: 1rem; /* Adjust margin */
+    }
+
+    .item {
+        flex: 1 1 100%; /* Each item takes full width on mobile */
+        max-width: 100%;
+    }
+
+    .img {
+        max-width: 80px; /* Adjust image size for mobile */
+    }
+}
 
   /* project section */
 
-.project{
+  .project {
     padding-top: 20vh;
 }
+
 .text-gradient-projectheading {
     background: linear-gradient(to right, #666, #fff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 6rem; 
-    font-weight: 400; 
+    font-size: 6rem; /* Base font size */
+    font-weight: 400;
 }
+
 .text-gradient-projectcontent {
     background: linear-gradient(to right, #666, #fff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 4rem; 
-    font-weight: 400; 
+    font-size: 4rem; /* Base font size */
+    font-weight: 400;
     margin-top: 15vh;
     margin-left: 9vw;
     padding-bottom: 16vh;
 }
-.projectrep{
-    /* height: 100vh; */
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .text-gradient-projectheading {
+        font-size: 4.5rem; /* Reduce font size for tablets */
+    }
+
+    .text-gradient-projectcontent {
+        font-size: 3rem; /* Reduce font size for tablets */
+        margin-left: 5vw; /* Adjust margin for tablets */
+    }
+
+    .project {
+        padding-top: 15vh; /* Adjust padding for tablets */
+    }
 }
 
+@media (max-width: 480px) {
+    .text-gradient-projectheading {
+        font-size: 3rem; /* Further reduce font size for mobile */
+    }
 
+    .text-gradient-projectcontent {
+        font-size: 2rem; /* Further reduce font size for mobile */
+        margin-left: 2vw; /* Adjust margin for mobile */
+        margin-top: 10vh; /* Adjust margin for mobile */
+    }
+
+    .project {
+        padding-top: 10vh; /* Further adjust padding for mobile */
+    }
+}
 
 /* contact section */
-
-
-
-.contact1{
+.contact1 {
     height: 85vh;
 }
-.sayHello9{
+
+.sayHello9 {
     margin-top: 12vh;
     font-weight: 700;
 }
+
 .text-gradient-contact {
     background: linear-gradient(to right, #666, #fff);
     -webkit-background-clip: text;
@@ -369,6 +740,7 @@ body {
     font-size: 6rem; 
     font-weight: 550; 
 }
+
 .text-gradient-contact-body-9 {
     background: linear-gradient(to right, #666, #fff);
     -webkit-background-clip: text;
@@ -380,53 +752,58 @@ body {
     padding-right: 12vw;
 }
 
-
-
 /* skill section */
-
-/* .data1:hover{
-    data-aos="flip-left";
-} */
-
-
-/* Add this CSS to your stylesheet (e.g., styles.css) */
 
 .about-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    /* padding-bottom: 42vh; */
     height: 100vh;
-    /* background-color: #111;  */
     color: #fff; /* Adjust as needed */
-  }
-  
-  .text-gradient-about {
+}
+
+.text-gradient-about {
     flex: 1;
     font-size: 2.2em;
     line-height: 1.5;
     max-width: 50%; /* Adjust as needed */
     margin-right: 20px; /* Adjust as needed */
-  }
-  
-  .about-image img {
-    max-width: 500px;
-    height: 40rem;
-    margin-bottom: 35vh;
+}
+
+.about-image img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 400px; /* Set a maximum height to avoid overlapping */
+    margin-bottom: 20vh; /* Adjust margin as needed */
     border-radius: 10px; /* Adjust as needed */
-    /* padding-bottom: 15vh; */
-  }
-  
-  .hrskill{
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-image img {
+        max-width: 80%; /* Adjust max-width for tablets and larger phones */
+        max-height: 300px; /* Adjust max-height for smaller screens */
+        margin-bottom: 15vh; /* Reduce bottom margin for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-image img {
+        max-width: 90%; /* Adjust max-width for mobile devices */
+        max-height: 200px; /* Further reduce max-height for mobile */
+        margin-bottom: 10vh; /* Further reduce bottom margin for mobile */
+    }
+}
+
+.hrskill {
     width: 81vw;
     margin: -5px;
     margin-left: 5px;
     display: block;
-
 }
 
-.buttoncontactme button{
+.buttoncontactme button {
     background-color: transparent;
     border: 2px solid #A8A8A8;
     color: #A8A8A8;
@@ -434,16 +811,88 @@ body {
     height: 7vh;
 }
 
-.contactmebtn:hover{
+.contactmebtn:hover {
     background-color: white;
     color: #000;
 }
 
-.buttoncontactme{
+.buttoncontactme {
     display: flex;
     justify-content: center;
     margin-top: 12vh;
     padding-bottom: -5vh;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .text-gradient-contact {
+        font-size: 5rem; 
+    }
+
+    .text-gradient-contact-body-9 {
+        font-size: 3rem; 
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
+
+    .about-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-gradient-about {
+        max-width: 100%;
+        margin-right: 0; /* Remove margin for smaller screens */
+    }
+
+    .about-image img {
+        max-width: 90%; /* Adjust to fit smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .buttoncontactme button {
+        width: 80%; /* Use a larger percentage for smaller devices */
+    }
+}
+
+@media (max-width: 768px) {
+    .text-gradient-contact {
+        font-size: 4rem; 
+    }
+
+    .text-gradient-contact-body-9 {
+        font-size: 2.5rem; 
+    }
+
+    .buttoncontactme {
+        flex-direction: column; /* Stack buttons vertically */
+        margin-top: 10vh; /* Adjust spacing */
+    }
+}
+
+@media (max-width: 480px) {
+    .text-gradient-contact {
+        font-size: 3rem; 
+    }
+
+    .text-gradient-contact-body-9 {
+        font-size: 2rem; 
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .about-box {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .about-image img {
+        max-width: 100%; /* Allow image to fill screen */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .buttoncontactme button {
+        width: 100%; /* Full width buttons on small screens */
+    }
 }
 
 
@@ -453,29 +902,25 @@ body {
 
 .contact-box {
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
     flex-direction: column;
     padding: 20px;
-    /* background-color: #111; */
     color: #fff;
-  }
-  
-  .contact-box form {
+}
+
+.contact-box form {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding-left: 49px;
     max-width: 600px;
-  }
-  
-  .contact-box label {
+}
+
+.contact-box label {
     margin: 10px 0 5px;
-  }
-  
-  .contact-box input,
-  .contact-box textarea {
-    
+}
+
+.contact-box input,
+.contact-box textarea {
     height: 10vh;
     width: 51vw;
     padding: 10px;
@@ -484,13 +929,13 @@ body {
     opacity: 0.7;
     border: 1px solid #333;
     color: #fff;
-    /* border-radius: 5px; */
-  }
-  .contact-box textarea {
+}
+
+.contact-box textarea {
     height: 16rem;
-  }
-  
-  .contact-box button {
+}
+
+.contact-box button {
     padding: 10px 20px;
     background: #fff;
     border: none;
@@ -499,32 +944,71 @@ body {
     height: 10vh;
     font-size: 16px;
     width: 51vw;
-    /* border-radius: 5px; */
-  }
-  
-  .contact-box button:hover {
+}
+
+.contact-box button:hover {
     background: #ddd;
-  }
-  
+}
 
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .contact-box form {
+        padding-left: 20px; /* Reduce padding on smaller screens */
+    }
 
+    .contact-box input,
+    .contact-box textarea,
+    .contact-box button {
+        width: 80vw; /* Adjust width to fit smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-box form {
+        padding-left: 10px; /* Further reduce padding */
+    }
+
+    .contact-box input,
+    .contact-box textarea,
+    .contact-box button {
+        height: 8vh; /* Adjust height for smaller screens */
+        font-size: 14px; /* Reduce font size */
+        width: 90vw; /* Make it wider on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-box input,
+    .contact-box textarea,
+    .contact-box button {
+        height: 7vh; /* Further reduce height */
+        font-size: 12px; /* Further reduce font size */
+        padding: 8px; /* Adjust padding */
+        width: 95vw; /* Make it full width */
+    }
+
+    .contact-box textarea {
+        height: auto; /* Allow textarea to adjust height automatically */
+    }
+}
 
   /* effect */
 
-  .section1 {
+.section1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  
-  .location {
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    padding: 1rem; /* Add some padding */
+}
+
+.location {
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
-  }
-  
-  .blink-dot {
+    flex-wrap: wrap; /* Allow items to wrap */
+}
+
+.blink-dot {
     width: 10px;
     height: 10px;
     background-color: #0f0;
@@ -532,23 +1016,60 @@ body {
     margin-left: 10px;
     animation: blink 1s infinite;
     transform: translateY(-6px);
-  }
-  
-  @keyframes blink {
+}
+
+@keyframes blink {
     0%, 100% {
-      opacity: 1;
+        opacity: 1;
     }
     50% {
-      opacity: 0;
+        opacity: 0;
     }
-  }
-  
-  .time {
+}
+
+.time {
     margin-left: 10px;
     font-size: 15px;
-  }
-  .temp {
+}
+
+.temp {
     margin-left: 10px;
     font-size: 15px;
-  }
-  
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .section1 {
+        flex-direction: row; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+        margin-top: 4rem;
+    }
+
+    .location {
+        margin-bottom: 1rem; /* Add space between elements */
+    }
+
+    .time,
+    .temp {
+        font-size: 14px; /* Reduce font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .section1 {
+        padding: 0.5rem; /* Reduce padding on very small screens */
+        margin-top: 4rem;
+
+    }
+
+    .time,
+    .temp {
+        font-size: 12px; /* Further reduce font size */
+        margin-left: 5px; /* Adjust margin for smaller screens */
+    }
+
+    .blink-dot {
+        width: 8px; /* Adjust size of the blinking dot */
+        height: 8px;
+    }
+}

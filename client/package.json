@@ -27,5 +27,9 @@
     "eslint-plugin-react-refresh": "^0.4.7",
     "vite": "^5.3.4",
     "vite-plugin-static-copy": "^1.0.6"
-  }
+  },
+  "description": "Portfolio Website This is my personal portfolio website built using React and Vite. The site showcases my projects, skills, and provides a way to contact me.",
+  "main": "vite.config.js",
+  "author": "",
+  "license": "ISC"
 }
