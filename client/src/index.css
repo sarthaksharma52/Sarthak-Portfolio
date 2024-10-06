@@ -227,6 +227,9 @@ body {
 
 /* Media queries for different screen sizes */
 @media (min-width: 768px) {
+    .home {
+        height: 80vh;
+    }
     .text-gradient1{
         font-size: 4rem; /* Adjust font-size for tablets and medium screens */
     }
@@ -787,7 +790,7 @@ h3 {
 @media (max-width: 768px) {
     .about-image img {
         max-width: 80%; /* Adjust max-width for tablets and larger phones */
-        max-height: 300px; /* Adjust max-height for smaller screens */
+        max-height: 550px; /* Adjust max-height for smaller screens */
         margin-bottom: 15vh; /* Reduce bottom margin for smaller screens */
     }
 }
