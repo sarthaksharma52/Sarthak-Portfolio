@@ -1,5 +1,5 @@
 import React from 'react';
-import pdf from './pdf/Sarthak-Resume-hackerresume (2).pdf';
+import pdf from './pdf/Sarthak_Sharma_Resume_Aug_New.pdf';
 import instagramIcon from '../public/assets/instagram.png';
 import githubIcon from '../public/assets/github.png';
 import linkedinIcon from '../public/assets/linkedin.png';
