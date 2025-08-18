@@ -16,7 +16,7 @@ Introduction
 Welcome to my portfolio website! Here you can find information about my projects, skills, and get in touch with me. This website serves as a professional online presence and a place to showcase my work.
 
 Features
-Responsive design
+Responsive design 
 Project showcase
 Skills display
 Contact form
