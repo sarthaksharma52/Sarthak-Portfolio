@@ -1,6 +1,28 @@
 [
   {
     "id": 2,
+    "year": "2025",
+    "title": "AiDEV",
+    "imageSrc": "/images 2/proimg/aidev.png",
+    "description": "This is a project made with Nodejs express React Socket.io and mongodb.",
+    "liveLink": "https://aidev-omnm.onrender.com/login",
+    "sourceCodeLink": "https://github.com/sarthaksharma52/AIDEV",
+    "cardColor": "#e2e3e3",
+    "textColor": "#2ba0ff" 
+  },
+  {
+    "id": 3,
+    "year": "2024",
+    "title": "SportIn",
+    "imageSrc": "/images 2/proimg/sportin.png",
+    "description": "This is a project made with Nodejs express React and mongodb.",
+    "liveLink": "https://sportin-sx9a.onrender.com/",
+    "sourceCodeLink": "https://github.com/sarthaksharma52/SportIn",
+    "cardColor": "#e2e3e3",
+    "textColor": "#2ba0ff" 
+  },
+  {
+    "id": 4,
     "year": "2024",
     "title": "Blogging App",
     "imageSrc": "/images 2/proimg/BlogingApp.png",
@@ -11,7 +33,7 @@
     "textColor": "#2ba0ff" 
   },
   {
-    "id": 3,
+    "id": 5,
     "year": "2024",
     "title": "NoteTaking App",
     "imageSrc": "/images 2/proimg/NoteTaking.png",
@@ -22,7 +44,7 @@
     "textColor": "#000000" 
   },
   {
-    "id": 4,
+    "id": 6,
     "year": "2024",
     "title": "Venture agency",
     "imageSrc": "/images 2/proimg/ventureAgency.png",
@@ -33,7 +55,7 @@
     "textColor": "#000000" 
   },
   {
-    "id": 5,
+    "id": 7,
     "year": "2024",
     "title": "RealTime Tracke",
     "imageSrc": "/images 2/proimg/TrackingApp.png",
